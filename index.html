@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zimbabwe Drought Monitoring</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-providers@1.12.0/dist/leaflet-providers.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/leaflet.grid@0.3.0/dist/leaflet.grid.min.js"></script>
+<!-- Leaflet.Graticule JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/leaflet.graticule@1.1.0/dist/leaflet.graticule.min.js"></script>
+<link rel="stylesheet" href="Leaflet.Coordinates-master/src/Control.Coordinates.css">
+<script src="Leaflet.Coordinates-master/src/Control.Coordinates.js"></script>
+<link rel="stylesheet" href="leaflet-print/leaflet.print.css">
+<script src="leaflet-print/leaflet.print.js"></script>
+
+
+
+
+<!-- Leaflet.Graticule CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.graticule@1.1.0/dist/leaflet.graticule.min.css" />
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+
+</head>
+<body>
+  <header>
+    <h1>ZIMBABWE DROUGHT MONITORING SYSTEM</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="timeseries/timeseries.html">Time Series</a></li>
+      <li><a href="#map">About Map</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><button id="toggle-button">
+  <i class="fas fa-bars"></i>
+</button>
+
+</li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="left-section">
+      <div class="tabs">
+        <div class="tab" id="tab1">
+
+          <h2>Drought Year</h2>
+          <label for="year-select">Select Year:</label>
+            <select id="year-select">
+           <option value="">-- Select Year --</option>
+          <!-- Populate the years dynamically using JavaScript -->
+          </select>
+
+          <label for="month-select">Select Month:</label>
+          <select id="month-select">
+          <option value="">-- Select Month --</option>
+           <!-- Populate the months dynamically using JavaScript -->
+            </select>
+
+            <button id="view-button">
+  <i class="fas fa-eye"></i> View Map
+</button>
+
+            <!-- Populate the months dynamically using JavaScript -->
+          </select>
+        </div>
+        <div class="tab" id="tab2">
+          <br>
+        <hr class="new4">
+          <br>
+         <hr class="new4">
+          
+
+<div class="downloads">
+  <h3>Downloads</h3>
+  <label for="download-year-select">Select Year:</label>
+  <select id="download-year-select">
+    <option value="">-- Select Year --</option>
+    <!-- Populate the years dynamically using JavaScript -->
+  </select>
+  <label for="download-type-select">Select Download Type:</label>
+  <select id="download-type-select">
+    <option value="raster">Raster Maps</option>
+    <option value="zonal">Zonal Statistics Datasets</option>
+  </select>
+  <button id="download-button"><i class="fas fa-download"></i> Download</button>
+  <br>
+  <p>Notice! These downloads are for datsets that were used for the production of the Maps both raster and vector datsets. The downloads for the current month will only be available on the third week of the month.</p>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="map" class="right-section"></div>
+    <div id="scale-bar"></div>
+
+  </div>
+  <footer>
+    <p>Innovation Through Space Science and Technology</p>
+  </footer>
+
+ <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet-providers@1.12.0/dist/leaflet-providers.js"></script>
+  <script src="main.js"></script> 
+</body>
+</html>

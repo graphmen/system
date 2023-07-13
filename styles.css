@@ -1,0 +1,285 @@
+/* Header styles */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+header {
+  background-color: #063363;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Navbar styles */
+nav {
+  background-color: #8dd5eb;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  margin: 0 10px;
+  display: inline;
+}
+
+/* Footer styles */
+footer {
+  background-color: #007bff;
+  padding: 10px;
+  text-align: center;
+  font-size: 29px;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-section {
+  width: 20%;
+  background-color: #fcfefc;
+  padding: 20px;
+  transition: width 0.3s ease;
+}
+
+.right-section {
+  width: 80%;
+}
+
+#map {
+  height: 100%;
+}
+
+/* Additional styles for catalog and other elements */
+.left-section {
+  width: 20%;
+  background-color: #f8f9fa;
+  padding: 20px;
+  transition: width 0.3s ease;
+}
+
+.tabs {
+  margin-bottom: 20px;
+}
+
+.tab h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+select {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* Additional styles for the left section */
+.downloads {
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center; /* Add this line to center the content */
+}
+
+#download-button {
+  display: inline-block; /* Add this line to make the button inline-block */
+  background-color: hsl(211, 94%, 32%);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+#download-button:hover {
+  background-color: hsl(245, 72%, 13%);
+}
+
+.downloads {
+  border: 2px solid #50c8d0;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.tab#tab2 {
+  margin-bottom: 0;
+}
+
+.left-section {
+  width: 20%;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border: 4px solid #50c8d0;
+  border-radius: 4px;
+}
+
+/* CSS for the grid overlay */
+.grid-overlay {
+  pointer-events: none; /* Prevents the grid from capturing mouse events */
+}
+
+/* CSS for the grid lines */
+.grid-line {
+  stroke: #ae0e0e; /* Color of the grid lines */
+  stroke-width: 1; /* Width of the grid lines */
+  stroke-opacity: 0.5; /* Opacity of the grid lines */
+}
+
+/* CSS for the grid labels */
+.grid-label {
+  font-size: 10px;
+  fill: #ae0e0e; /* Color of the grid labels */
+  text-anchor: middle;
+}
+
+.grid-line {
+  stroke: #ae0e0e; /* Color of the grid lines */
+  stroke-width: 1; /* Width of the grid lines */
+  stroke-opacity: 0.5; /* Opacity of the grid lines */
+}
+
+.grid-label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ae0e0e;
+}
+
+nav ul {
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 5px;
+}
+
+.footer {
+  font-size: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .left-section {
+    display: none;
+  }
+  .hidden {
+    display: block;
+  }
+}
+
+hr.new4 {
+  border: 4px solid rgb(127, 224, 229);
+}
+
+#view-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 40px;
+  background-color: hsl(211, 94%, 32%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#view-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#view-button i {
+  margin-right: 5px;
+}
+
+#view-button:hover {
+  background-color: hsl(245, 72%, 13%);
+}
+
+#view-button i::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f06e";
+}
+
+#scale-bar {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 32px;
+  z-index: 1000;
+}
+
+.legend-image {
+  width: 150px; /* Adjust the width as per your requirement */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+#toggle-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #1bbe1e;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+
+  #toggle-button {
+    display: block;
+  }
+
+  .hide-left-section .left-section {
+    display: none;
+  }
+}

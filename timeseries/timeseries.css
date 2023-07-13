@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #063363;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .image-gallery img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .image-gallery img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .image-gallery img.expanded {
+    width: 100vw;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    cursor: zoom-out;
+  }
+  
+
+  .image-gallery img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 3px solid blue; /* Add this line to set the blue border */
+  }
+  
+  .note {
+  background-color: #f8f8f8;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.note-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.note-description {
+  font-weight: bold;
+}
+
+.note-drought-classes {
+  margin-bottom: 10px;
+}
+
+.note-trend-analysis {
+  margin-bottom: 0;
+}
+.container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.image-gallery {
+  margin-bottom: 60px; /* Adjust the margin as needed to prevent overlap with the footer */
+}
+
+footer {
+  background-color: #007bff;
+  padding: 10px;
+  text-align: center;
+  font-size: 29px;
+  color: #fff;
+  height: 80px; /* Adjust the height as desired */
+}
